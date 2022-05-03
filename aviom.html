@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviom Search</title>
+    <link rel="stylesheet" href="./aviom.css">
+    <link href="./media/favicon3.png" rel="icon">
+    <script src="./aviom.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <a href="https://mail.google.com/">Amail</a>
+        <a href="">Images</a>
+        <img class="img-1" src="./media/dots.PNG">
+        <img class="img-2" src="./media/image.png" onclick="togglemenu()">
+    </header>
+    <div id="pop-nav" class="pop" data-visible="false">
+        <div id="pop-head" class="pop-header">
+            <div>
+                <img src="">
+                <!-- <?php echo $_FILES['image'];?> -->
+            </div>
+            <div>
+                <!-- <?php echo $_GET['fullname']; ?> -->
+                <p><b></b></p>
+                <!-- <?php echo $_GET['email']; ?> -->
+                <p></p>
+            </div>
+            <a href="#">Manage your Aviom Account</a>
+        </div>
+        <div class="pop-body">
+            <!-- <?php echo $_GET['phone'];?> -->
+            <p>Phone Number:</p>
+            <!-- <?php echo $_GET['gender'];?> -->
+            <p>Gender:</p>
+            <!-- <?php echo $_GET['birthdate'];?> -->
+            <p>Birthdate: </p>
+            <!-- <?php echo $_GET['password'];?> -->
+            <p>Password: </p>
+            <!-- <?php echo $_GET['security']; ?> -->
+            <p>Security Question:</p>
+            <!-- <?php echo $_GET['answer'];?> -->
+            <p>Security Answer:</p>
+        </div>
+        <div class="pop-sign">
+            <a href="#">Sign out of all accounts</a>
+        </div>
+        <div class="footer">
+            <p>Privacy Policy </p>    
+            <p>•</p>
+            <p>Terms of Service</p>
+        </div>
+    </div>
+    <form action="http://www.google.com/search" method="get">
+        <section>
+            <div class="main">
+                <img src="./media/logo.png"> 
+                <div class="input">
+                    <label for="search"></label>
+                    <img class="img1" src="./media/search.png">
+                    <input type="search" id="search" name="q" size="55" maxlength="2048">
+                    <img class="img2" src="./media/microphone.png">
+                </div>
+                <div class="buttons">
+                    <a href="./aviom.html">Aviom Search</a>
+                    <a href="https://www.google.com/doodles">I'm Feeling Lucky</a>
+                </div>
+                <div class="footer">
+                    <p>Aviom offered in:</p>
+                    <a href="#">Filipino</a>
+                    <a href="#">Cebuano</a>
+                </div>
+            </div>
+        </section>
+    </form>
+    <div class="end">
+        <div class="end-first">
+            <p>Philippines</p>
+        </div>
+        <div class="end-second">
+            <div class="end-1">
+                <a href="#">About</a>
+                <a href="#">Advertising</a>
+                <a href="#">Business</a>
+                <a href="#">How Search works</a>
+            </div>
+            <div class="end-2">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Settings</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

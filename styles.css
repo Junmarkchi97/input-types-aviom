@@ -1,0 +1,577 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+html{
+    scroll-snap-type: y mandatory;
+}
+
+section{
+    scroll-snap-align: start;
+}
+
+
+.introduction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.intro-1{
+    display: flex;
+    flex-direction: row;
+}
+
+.intro-2{
+    display: flex;
+    flex-direction: row;
+}
+
+.image-1{
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 350px;
+}
+
+h1{
+    font-size: 1.3rem;
+    color: rgb(56, 87, 119);
+    font-weight: 100;
+}
+
+.intro-1{
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-1 a{
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    height: auto;
+    padding: 0.5rem;
+    width: 5rem;
+    background-color: rgb(33, 78, 124);
+    border-radius: 0.2rem;
+    border-style: none;
+    font-weight: 800;
+}
+
+h6{
+    margin: 0.8rem;
+    color: rgb(56, 87, 119);
+    font-weight: 500;
+}
+
+.image-2{
+    height: auto;
+    width: 0.5rem;
+    margin-left: -0.5rem;
+    padding: 0;
+}
+
+.intro-2{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(56, 87, 119);
+    margin-right: 8.2rem;
+    margin-top: -1rem;
+}
+
+.image-3{
+    margin-right: 3px;
+    height: auto;
+    width: 0.7rem;
+}
+
+h5{
+    font-size: 0.7rem;
+    font-weight: 100;
+}
+
+.intro-1 a:hover{
+    background-color: rgb(30, 68, 105);
+}
+
+.intro-1 a:active{
+    background-color: rgb(29, 62, 95);
+}
+
+#picture,
+#number,
+#birthday,
+#agree,
+#security,
+#gender,
+#create {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.picture-question,
+.num-question,
+.birth-question,
+.security-question,
+.gender-question,
+.create-question{
+    display: inherit;
+    flex-direction: row;
+    font-size: 1.5rem;
+    color: rgb(56, 87, 119);
+    font-weight: 100;
+    align-items: center;
+    padding: 1rem;
+}
+
+.create-email,
+.create-password,
+.create-name{
+    display: inherit;
+    flex-direction: row;
+}
+
+.picture-question img,
+.num-question img,
+.birth-question img,
+.security-question img,
+.gender-question img,
+.create-question img{
+    height: auto;
+    width: 1rem;
+    margin: 5px;
+}
+
+.create-email,
+.create-name{
+    margin: 0.5rem;
+    padding: 1rem;
+    border: 1px solid rgb(206, 202, 202);
+    border-radius: 1rem;
+    background-color: rgba(216, 215, 215, 0.589);
+    align-items: center;
+    transition: 0.5s;
+}
+
+.create-confirm{
+    margin: 0.5rem;
+    padding: 1rem 1.2rem;
+    border: 1px solid rgb(206, 202, 202);
+    border-radius: 1rem;
+    background-color: rgba(216, 215, 215, 0.589);
+    align-items: center;
+    transition: 0.5s;
+}
+
+.create-password{
+    margin: 0.5rem;
+    padding: 1rem 1.2rem;
+    border: 1px solid rgb(206, 202, 202);
+    border-radius: 1rem;
+    background-color: rgba(216, 215, 215, 0.589);
+    align-items: center;
+    transition: 0.5s;
+}
+
+.create-email label,
+.create-password label,
+.create-name label{
+    font-size: 1rem;
+    color: rgb(56, 87, 119);
+    font-weight: 100;
+}
+
+.create-confirm label{
+    font-size: 0.8rem;
+    color: rgb(56, 87, 119);
+    font-weight: 100;
+}
+
+.create-password input,
+.create-name input{
+    margin-left: 3rem;
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+    border-style: none;
+    outline: none;
+}
+
+.create-email input{
+    margin-left: 1.2rem;
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+    border-style: none;
+    outline: none;
+}
+
+.create-confirm input{
+    margin-left: 0.7rem;
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+    border-style: none;
+    outline: none;
+}
+
+.birth-answer:hover,
+.security-answer:hover,
+.gender-female:hover,
+.gender-male:hover,
+.num-answer:hover,
+.create-confirm:hover,
+.create-email:hover,
+.create-password:hover,
+.create-name:hover{
+    transform: scale(1.05);
+}
+
+
+#security a,
+#birthday a,
+#gender a,
+#number a,
+#create a{
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    height: auto;
+    padding: 0.5rem;
+    width: 5rem;
+    background-color: rgb(33, 78, 124);
+    border-radius: 0.2rem;
+    border-style: none;
+    font-weight: 800;
+    margin: 0.5rem;
+}
+
+#birthday a:hover,
+#agree input:hover,
+#number a:hover,
+#security a:hover,
+#gender a:hover,
+#create a:hover{
+    background-color: rgb(30, 68, 105);
+}
+
+#birthday a:active,
+#number a:active,
+#agree input:active,
+#security a:active,
+#gender a:active,
+#create a:active{
+    background-color: rgb(29, 62, 95);
+} 
+
+.gender-male{
+    margin: 0.51rem;
+    padding: 0.5rem 1rem;
+    padding-right: 2rem;
+    background-color: rgba(216, 215, 215, 0.589);
+    cursor: pointer;
+    border-radius: 0.5rem;
+    border: 1px solid rgb(206, 202, 202);
+    transition: 0.5s;
+}
+
+.gender-female{
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: rgba(216, 215, 215, 0.589);
+    cursor: pointer;
+    border-radius: 0.5rem;
+    border: 1px solid rgb(206, 202, 202);
+    transition: 0.5s;
+}
+
+.gender-male label,
+.gender-female label{
+    font-size: 1rem;
+    color: rgb(56, 87, 119);
+    font-weight: 100;
+}
+
+.security-ask select{
+    border-radius: 1rem;
+    padding: 0.2rem;
+    color: rgb(56, 87, 119);
+    outline: none;
+}
+
+.security-answer{
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border:1px solid rgb(206, 202, 202);
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: rgba(216, 215, 215, 0.589);
+    transition: 0.5s;
+}
+
+.security-answer textarea{
+    border-radius: 0.5rem;
+    padding: 5px 5px;
+    border-style: none;
+    outline: none;
+    width: 7rem;
+    height: 1.6rem;
+}
+
+.security-answer label{
+    color: rgb(56, 87, 119);
+}
+
+#agree label{
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5rem;
+    color: rgb(56, 87, 119);
+    font-weight: 100;
+    align-items: center;
+    padding: 1rem;
+}
+
+.agree-check{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.agree-submit input{
+    height: auto;
+    padding: 0.5rem;
+    width: 5rem;
+    background-color: rgb(33, 78, 124);
+    border-radius: 0.2rem;
+    border-style: none;
+    font-weight: 800;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.birth-answer{
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border:1px solid rgb(206, 202, 202);
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: rgba(216, 215, 215, 0.589);
+    transition: 0.5s;
+}
+
+.num-answer label,
+.birth-answer label{
+    color: rgb(56, 87, 119);
+}
+
+.birth-answer input{
+    border-radius: 0.5rem;
+    text-align: center;
+    border-style: none;
+    outline: none;
+    padding: 0.5rem;
+}
+
+.num-answer{
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border:1px solid rgb(206, 202, 202);
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: rgba(216, 215, 215, 0.589);
+    transition: 0.5s;
+}
+
+.num-answer input{
+    border-radius: 0.5rem;
+    border-style: none;
+    outline: none;
+    padding: 0.5rem;
+    width: 8rem;
+}
+
+.terms{
+    max-height: 100%;
+    height: 40vh;
+    width: 55vh;
+    max-width: 100%;
+    display: flex;
+    overflow-y: scroll;
+    border: 1px solid rgb(33, 78, 124);
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    color: rgb(33, 78, 124);
+}
+
+.picture-display{
+    height: 20rem;
+    width: 20rem;
+    border: 1px solid black;
+    display: relative;
+    overflow: hidden;
+    margin: 1rem;
+}
+
+
+.picture-upload label{
+    border: 1px solid  black;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.8rem;
+    margin: 5rem 5rem;
+    background-color: rgb(33, 78, 124);;
+    color: white;
+}
+
+#picture a{
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    height: auto;
+    padding: 0.5rem;
+    width: 5rem;
+    background-color: rgb(33, 78, 124);
+    border-radius: 0.2rem;
+    border-style: none;
+    font-weight: 800;
+    margin: 1.5rem;
+}
+
+@media (max-width: 700px){
+    body {
+        overflow-x: hidden;
+    }
+
+    .introduction{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 100vw;
+    }
+
+    .intro-1 h6,
+    .intro-1 img{
+        display: none;
+    }
+
+    .introduction h1{
+        text-align: center;
+        font-size: 100%;
+        max-width: 70%;
+    }
+
+    .introduction .image-1{
+        height: auto;
+        max-width: 50%;
+        margin-top: -5rem;
+    }
+
+    .intro-1 a{
+        position: absolute;
+        bottom: 0;
+        width: 42vh;
+        margin-bottom: 1rem;
+        max-width: 100%;
+    }
+    
+    .intro-2{
+        position: absolute;
+        bottom: 3.5rem;
+        width: 100vw;
+        margin-bottom: 0.5rem;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .intros{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding-top: 1.3rem;
+        background-color: rgb(230, 228, 228);
+    }
+
+    .num-question,
+    .birth-question,
+    .security-question,
+    .gender-question,
+    .create-question{
+        font-size: 1.3rem;
+    }
+
+    .create-confirm label,
+    .create-email label,
+    .create-password label,
+    .create-name label{
+        font-size: 0.8rem;
+    }
+
+    .create-email,
+    .create-password,
+    .create-name{
+        padding: 0.7rem;
+    }
+
+    .create-confirm{
+        width: 82%
+    }
+
+    .create-confirm input{
+        width: 55%;
+    }
+   
+    #agree{
+        position: relative;
+    }
+
+    .terms{
+        width: 40vh;
+    }
+
+    #agree label{
+        font-size: 0.8rem;
+    }
+
+    .agree-check input{
+        margin-left: 1rem;
+    }
+
+    .introduction,
+    #picture,
+    #number,
+    #birthday,
+    #agree,
+    #security,
+    #gender,
+    #create{
+        min-width: 100vw;
+    }
+}

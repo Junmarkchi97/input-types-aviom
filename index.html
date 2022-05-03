@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviom Search</title>
+    <meta property="og:title" content="Aviom Search"/>
+    <meta property="og:image" content="https://photos.app.goo.gl/o7wGxHQW1gocNUfZ9"/>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="./media/favicon3.png" rel="icon">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <form action="./aviom.html" method="get" enctype="multipart/form-data">
+        <section class="introduction">
+            <img class="image-1" src="./media/logo.png" alt="logo">
+            <h1>Welcome to Aviom Search! Your One Stop Search Engine!</h1>
+            <span class="intros">
+                <div class="intro-1">
+                    <a href="#create">Start</a>
+                    <h6>click <b>Start</b> to <b>Register</b></h6>
+                    <img class="image-2" src="./media/arrow.png" alt="arrow">
+                </div>
+                <div class="intro-2">
+                    <img class="image-3" src="./media/clock.png">
+                    <h5>Takes 1 min</h5>
+                </div>
+            </span>
+        </section>
+        <section id="create">
+            <div class="create-question">
+                <p>1</p>
+                <img src="./media/arrow-left.png" alt="arrow">
+                <p>Create your account *</p>
+            </div>
+            <div class="create-name">
+                <label for="fullname">Full Name:</label>
+                <input type="text" name="fullname" id="fullname" required>
+            </div>
+            <div class="create-email">
+                <label for="email">Email Address:</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="create-password">
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" onkeyup="check()" required>
+            </div>
+            <div class="create-confirm">
+                <label for="passconfirm">Confirm Password:</label>
+                <input type="password" name="passconfirm" id="passconfirm" onkeyup="check()" required>
+            </div>
+            <span id='message'></span>
+            <a href="#number">OK ✓</a>
+        </section>
+        <section id="number">
+            <div class="num-question">
+                <p>2</p>
+                <img src="./media/arrow-left.png" alt="arrow">
+                <p>Enter your Phone Number *</p>
+            </div>
+            <div class="num-answer">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" name="phone" placeholder="+63" id="phone" required>
+            </div>
+            <a href="#gender">OK ✓</a>
+        </section>
+        <section id="gender">
+            <div class="gender-question">
+                <p>3</p>
+                <img src="./media/arrow-left.png" alt="arrow">
+                <p>Select your Gender *</p>
+            </div>
+            <div class="gender-male">    
+                <input type="radio" name="gender" value="Male" id="male" required>
+                <label for="male">Male</label><br>
+            </div>
+            <div class="gender-female"> 
+                <input type="radio" name="gender" value="Female" id="female" required>
+                <label for="female">Female</label>
+            </div>
+            <a href="#birthday" >OK ✓</a>
+        </section>
+        <section id="birthday">
+            <div class="birth-question">
+                <p>4</p>
+                <img src="./media/arrow-left.png" alt="arrow">
+                <p>Enter your Birthdate *</p>
+            </div>
+            <div class="birth-answer">
+                <label for="birthdate">Birthdate:</label>
+                <input type="date" name="birthdate" value="" id="birthdate" required>
+            </div>
+            <a href="#security" >OK ✓</a>
+        </section>
+        <section id="security">
+            <div class="security-question">
+                <p>5</p>
+                <img src="./media/arrow-left.png" alt="arrow">
+                <p>Pick a security question *</p>
+            </div>
+            <div class="security-ask">
+                <select name="security">
+                    <option value="What was your first pet name?">What was your first pet name?</option>
+                    <option value="What was your first job?">What was your first job?</option>
+                    <option value="What is your nickname?">What is your nickname?</option>
+                    <option value="What city were you born in?">What city were you born in?</option>
+                    <option value="What is your oldest sibling's middle name?">What is your oldest sibling's middle name?</option>
+                </select>
+            </div>
+            <div class="security-answer">
+                <label for="answer">Answer:</label>
+                <textarea name="answer" required></textarea>
+            </div>
+            <a href="#picture" >OK ✓</a>
+        </section>
+        <section id="picture">
+                <div class="picture-question">
+                    <p>6</p>
+                    <img src="./media/arrow-left.png" alt="arrow">
+                    <p>Upload your Profile Picture *</p>
+                </div>
+                <div class="picture-display">
+                    <img id="output" width="100%" />	
+                </div>
+                <div class="picture-upload">
+                    <p><label for="file" style="cursor: pointer;" >Upload Image</label></p>
+                    <input type="file" accept="image/jpeg, image/png" name="image" id="file" style="display: none;" onchange="loadFile(event)" required>
+                </div>
+                <a href="#agree">OK ✓</a>
+        </section>
+        <section id="agree">
+            <div>
+            <p class="terms">
+                <b>TERMS AND CONDITIONS</b>
+                <br><b>The standard Lorem Ipsum passage, used since the 1500s</b><br>
+                "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                <br><br><b>Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC<br></b><br>
+                "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+                <br><br><b>1914 translation by H. Rackham</b><br>
+                "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"
+                <br><br><b>Section 1.10.33 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC</b><br>
+                "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
+                <br><br><b>1914 translation by H. Rackham</b><br>
+                "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."
+                </p>
+            </div>
+            <div class="agree-check">  
+                <input type="checkbox" name="agree" value="checked" required>
+                <label for="agree" >I agree to accept terms and conditions above *</label>
+            </div>
+            <div class="agree-submit">
+                <input type="submit">
+            </div>
+        </section>
+    </form>
+</body>
+</html>
